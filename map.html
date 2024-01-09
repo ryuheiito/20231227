@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fe5079e59cbcc682b822a6122c0f0b9c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fe5079e59cbcc682b822a6122c0f0b9c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fe5079e59cbcc682b822a6122c0f0b9c = L.map(
+                "map_fe5079e59cbcc682b822a6122c0f0b9c",
+                {
+                    center: [36.5, 138.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_91986f681753e530aa2655b428941a7f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fe5079e59cbcc682b822a6122c0f0b9c);
+        
+    
+            var marker_c87178ee3ce85fa6cfe10a9f1a8753a8 = L.marker(
+                [35.80708129, 140.357299],
+                {}
+            ).addTo(map_fe5079e59cbcc682b822a6122c0f0b9c);
+        
+    
+        var popup_d95d25b5221206d6c44a6fb17c6c69a6 = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_3a01fdbf9e3671877e9db3fb74f5b4af = $(`<div id="html_3a01fdbf9e3671877e9db3fb74f5b4af" style="width: 100.0%; height: 100.0%;"><div style='font-size: 14px; font-family: Arial, sans-serif;'><b>拠点名称:</b> 日通NECロジスティクス（株）（成田日通倉庫）<br><b>地震リスク(6強以上):</b> 30年以内に発生する確率は6%以上<br><b>液状化リスク:</b> かなり低い<br><b>津波浸水想定:</b> 想定無し<br><b>風災リスク(設計基準風速30m/s以上):</b> 観測無し<br><b>河川氾濫想定:</b> 想定無し<br><b>高潮浸水想定:</b> 想定無し<br><b>土砂災害警戒区域:</b> 指定無し<br><b>降灰の堆積(富士山噴火シナリオ):</b> 想定無し<br><b>1k㎡における落雷回数:</b> 0.04～4回未満<br><b>保管場所:</b> 3階<br><a href='https://www.google.com/maps?q=35.80708129,140.357299' target='_blank'>Google Mapsで開く</a></div></div>`)[0];
+                popup_d95d25b5221206d6c44a6fb17c6c69a6.setContent(html_3a01fdbf9e3671877e9db3fb74f5b4af);
+            
+        
+
+        marker_c87178ee3ce85fa6cfe10a9f1a8753a8.bindPopup(popup_d95d25b5221206d6c44a6fb17c6c69a6)
+        ;
+
+        
+    
+    
+            var marker_c295822e346c8f30a870224cfbcc347f = L.marker(
+                [33.60857184, 130.4036967],
+                {}
+            ).addTo(map_fe5079e59cbcc682b822a6122c0f0b9c);
+        
+    
+        var popup_46d58ad35d6053d6da8145ac41b100d3 = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_5f9e37c9b5d8f0bfdf6ddfcf42934727 = $(`<div id="html_5f9e37c9b5d8f0bfdf6ddfcf42934727" style="width: 100.0%; height: 100.0%;"><div style='font-size: 14px; font-family: Arial, sans-serif;'><b>拠点名称:</b> 日通NECロジスティクス（株）（福岡倉庫）<br><b>地震リスク(6強以上):</b> 30年以内に発生する確率は6%未満<br><b>液状化リスク:</b> 高い<br><b>津波浸水想定:</b> 想定無し<br><b>風災リスク(設計基準風速30m/s以上):</b> 観測無し<br><b>河川氾濫想定:</b> 想定無し<br><b>高潮浸水想定:</b> 3m以上5ｍ未満<br><b>土砂災害警戒区域:</b> 指定無し<br><b>降灰の堆積(富士山噴火シナリオ):</b> 想定無し<br><b>1k㎡における落雷回数:</b> 4～8回未満<br><b>保管場所:</b> 3階<br><a href='https://www.google.com/maps?q=33.60857184,130.4036967' target='_blank'>Google Mapsで開く</a></div></div>`)[0];
+                popup_46d58ad35d6053d6da8145ac41b100d3.setContent(html_5f9e37c9b5d8f0bfdf6ddfcf42934727);
+            
+        
+
+        marker_c295822e346c8f30a870224cfbcc347f.bindPopup(popup_46d58ad35d6053d6da8145ac41b100d3)
+        ;
+
+        
+    
+    
+            var marker_a2399932363ef5c29a90e33423da54c0 = L.marker(
+                [32.062775, 131.47403],
+                {}
+            ).addTo(map_fe5079e59cbcc682b822a6122c0f0b9c);
+        
+    
+        var popup_c43804c0124cb29be82ed7a8b1c39240 = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_3f2ccb406750227a3dcb2f2eff6e4896 = $(`<div id="html_3f2ccb406750227a3dcb2f2eff6e4896" style="width: 100.0%; height: 100.0%;"><div style='font-size: 14px; font-family: Arial, sans-serif;'><b>拠点名称:</b> 吉川工業アールエフセミコン株式会社　宮崎本社<br><b>地震リスク(6強以上):</b> 30年以内に発生する確率は6%以上<br><b>液状化リスク:</b> やや高い<br><b>津波浸水想定:</b> 想定無し<br><b>風災リスク(設計基準風速30m/s以上):</b> 観測無し<br><b>河川氾濫想定:</b> 想定有り<br><b>高潮浸水想定:</b> 想定無し<br><b>土砂災害警戒区域:</b> 指定無し<br><b>降灰の堆積(富士山噴火シナリオ):</b> 想定無し<br><b>1k㎡における落雷回数:</b> 8～16回未満<br><b>保管場所:</b> 1階～3階<br><a href='https://www.google.com/maps?q=32.062775,131.47403' target='_blank'>Google Mapsで開く</a></div></div>`)[0];
+                popup_c43804c0124cb29be82ed7a8b1c39240.setContent(html_3f2ccb406750227a3dcb2f2eff6e4896);
+            
+        
+
+        marker_a2399932363ef5c29a90e33423da54c0.bindPopup(popup_c43804c0124cb29be82ed7a8b1c39240)
+        ;
+
+        
+    
+    
+            var marker_560a244ffa0a273d9fc4e02e98c6e31d = L.marker(
+                [33.59037231, 130.4388407],
+                {}
+            ).addTo(map_fe5079e59cbcc682b822a6122c0f0b9c);
+        
+    
+        var popup_549278f0aab7894160fe29c3b7bc205e = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_867298cc9cfdb1efa491a4ef9f6e786e = $(`<div id="html_867298cc9cfdb1efa491a4ef9f6e786e" style="width: 100.0%; height: 100.0%;"><div style='font-size: 14px; font-family: Arial, sans-serif;'><b>拠点名称:</b> 日本通運(株）福岡中央ロジスティクスセンター<br><b>地震リスク(6強以上):</b> 30年以内に発生する確率は6%未満<br><b>液状化リスク:</b> やや高い<br><b>津波浸水想定:</b> 想定無し<br><b>風災リスク(設計基準風速30m/s以上):</b> 観測無し<br><b>河川氾濫想定:</b> 想定有り<br><b>高潮浸水想定:</b> 1ｍ以上3ｍ未満<br><b>土砂災害警戒区域:</b> 指定無し<br><b>降灰の堆積(富士山噴火シナリオ):</b> 想定無し<br><b>1k㎡における落雷回数:</b> 8～16回未満<br><b>保管場所:</b> 3階～4階<br><a href='https://www.google.com/maps?q=33.59037231,130.4388407' target='_blank'>Google Mapsで開く</a></div></div>`)[0];
+                popup_549278f0aab7894160fe29c3b7bc205e.setContent(html_867298cc9cfdb1efa491a4ef9f6e786e);
+            
+        
+
+        marker_560a244ffa0a273d9fc4e02e98c6e31d.bindPopup(popup_549278f0aab7894160fe29c3b7bc205e)
+        ;
+
+        
+    
+    
+            var marker_cdbba8284a89a3e8b4a5df4146438930 = L.marker(
+                [32.43416433, 131.6526269],
+                {}
+            ).addTo(map_fe5079e59cbcc682b822a6122c0f0b9c);
+        
+    
+        var popup_7fa1d0d966cf6e23527afa053265f0ac = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_29c37fd863ee472f8a8adc45ca0402d1 = $(`<div id="html_29c37fd863ee472f8a8adc45ca0402d1" style="width: 100.0%; height: 100.0%;"><div style='font-size: 14px; font-family: Arial, sans-serif;'><b>拠点名称:</b> Sｾﾝｺｰ_日向PD、Sセ日向_輸出用<br><b>地震リスク(6強以上):</b> 30年以内に発生する確率は6%以上<br><b>液状化リスク:</b> 高い<br><b>津波浸水想定:</b> 5ｍ以上10ｍ未満<br><b>風災リスク(設計基準風速30m/s以上):</b> 観測無し<br><b>河川氾濫想定:</b> 想定無し<br><b>高潮浸水想定:</b> 0.5ｍ以上1ｍ未満<br><b>土砂災害警戒区域:</b> 指定無し<br><b>降灰の堆積(富士山噴火シナリオ):</b> 想定無し<br><b>1k㎡における落雷回数:</b> 4～8回未満<br><b>保管場所:</b> 1階<br><a href='https://www.google.com/maps?q=32.43416433,131.6526269' target='_blank'>Google Mapsで開く</a></div></div>`)[0];
+                popup_7fa1d0d966cf6e23527afa053265f0ac.setContent(html_29c37fd863ee472f8a8adc45ca0402d1);
+            
+        
+
+        marker_cdbba8284a89a3e8b4a5df4146438930.bindPopup(popup_7fa1d0d966cf6e23527afa053265f0ac)
+        ;
+
+        
+    
+    
+            var marker_ac8cc8b1cf3ea010b3d9d8581440eb5a = L.marker(
+                [32.43132482, 131.6384634],
+                {}
+            ).addTo(map_fe5079e59cbcc682b822a6122c0f0b9c);
+        
+    
+        var popup_d0d9ee2bf2f966f0b445e2c3502cc9f8 = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_b51a715dea3f0887d03e3643f921a094 = $(`<div id="html_b51a715dea3f0887d03e3643f921a094" style="width: 100.0%; height: 100.0%;"><div style='font-size: 14px; font-family: Arial, sans-serif;'><b>拠点名称:</b> Sｾﾝｺｰ_日向第2PD<br><b>地震リスク(6強以上):</b> 30年以内に発生する確率は6%以上<br><b>液状化リスク:</b> 高い<br><b>津波浸水想定:</b> 5ｍ以上10ｍ未満<br><b>風災リスク(設計基準風速30m/s以上):</b> 観測無し<br><b>河川氾濫想定:</b> 想定無し<br><b>高潮浸水想定:</b> 0.5ｍ以上1ｍ未満<br><b>土砂災害警戒区域:</b> 指定無し<br><b>降灰の堆積(富士山噴火シナリオ):</b> 想定無し<br><b>1k㎡における落雷回数:</b> 4～8回未満<br><b>保管場所:</b> 1階～2階<br><a href='https://www.google.com/maps?q=32.43132482,131.6384634' target='_blank'>Google Mapsで開く</a></div></div>`)[0];
+                popup_d0d9ee2bf2f966f0b445e2c3502cc9f8.setContent(html_b51a715dea3f0887d03e3643f921a094);
+            
+        
+
+        marker_ac8cc8b1cf3ea010b3d9d8581440eb5a.bindPopup(popup_d0d9ee2bf2f966f0b445e2c3502cc9f8)
+        ;
+
+        
+    
+    
+            var marker_2db6f4b2003c1aa7822d5b0b355ac9f1 = L.marker(
+                [34.78536404, 135.5740702],
+                {}
+            ).addTo(map_fe5079e59cbcc682b822a6122c0f0b9c);
+        
+    
+        var popup_5e028a4300cef6900614265cdf1aea2c = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_e759c6a0cd1bd762692de2eee5f29b91 = $(`<div id="html_e759c6a0cd1bd762692de2eee5f29b91" style="width: 100.0%; height: 100.0%;"><div style='font-size: 14px; font-family: Arial, sans-serif;'><b>拠点名称:</b> センコー北大阪ＰＤセンター<br><b>地震リスク(6強以上):</b> 30年以内に発生する確率は6%以上<br><b>液状化リスク:</b> やや高い<br><b>津波浸水想定:</b> 想定無し<br><b>風災リスク(設計基準風速30m/s以上):</b> 観測無し<br><b>河川氾濫想定:</b> 想定有り<br><b>高潮浸水想定:</b> 想定無し<br><b>土砂災害警戒区域:</b> 指定無し<br><b>降灰の堆積(富士山噴火シナリオ):</b> 想定無し<br><b>1k㎡における落雷回数:</b> 8～16回未満<br><b>保管場所:</b> 3階～5階<br><a href='https://www.google.com/maps?q=34.78536404,135.5740702' target='_blank'>Google Mapsで開く</a></div></div>`)[0];
+                popup_5e028a4300cef6900614265cdf1aea2c.setContent(html_e759c6a0cd1bd762692de2eee5f29b91);
+            
+        
+
+        marker_2db6f4b2003c1aa7822d5b0b355ac9f1.bindPopup(popup_5e028a4300cef6900614265cdf1aea2c)
+        ;
+
+        
+    
+    
+            var marker_c281a37b5d037b8d7836b2090964c9b2 = L.marker(
+                [32.43757429, 131.6536703],
+                {}
+            ).addTo(map_fe5079e59cbcc682b822a6122c0f0b9c);
+        
+    
+        var popup_150596e1a9efb2db007241ddfc6cacbb = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_5e6d9ba3eebc5251dacd8ae4514cda53 = $(`<div id="html_5e6d9ba3eebc5251dacd8ae4514cda53" style="width: 100.0%; height: 100.0%;"><div style='font-size: 14px; font-family: Arial, sans-serif;'><b>拠点名称:</b> センコー㈱　日向港湾営業所　竹島倉庫<br><b>地震リスク(6強以上):</b> 30年以内に発生する確率は6%以上<br><b>液状化リスク:</b> 高い<br><b>津波浸水想定:</b> 5ｍ以上10ｍ未満<br><b>風災リスク(設計基準風速30m/s以上):</b> 観測無し<br><b>河川氾濫想定:</b> 想定無し<br><b>高潮浸水想定:</b> 0.5ｍ以上1ｍ未満<br><b>土砂災害警戒区域:</b> 指定無し<br><b>降灰の堆積(富士山噴火シナリオ):</b> 想定無し<br><b>1k㎡における落雷回数:</b> 4～8回未満<br><b>保管場所:</b> 建物地上１F、保管階1F<br><a href='https://www.google.com/maps?q=32.43757429,131.6536703' target='_blank'>Google Mapsで開く</a></div></div>`)[0];
+                popup_150596e1a9efb2db007241ddfc6cacbb.setContent(html_5e6d9ba3eebc5251dacd8ae4514cda53);
+            
+        
+
+        marker_c281a37b5d037b8d7836b2090964c9b2.bindPopup(popup_150596e1a9efb2db007241ddfc6cacbb)
+        ;
+
+        
+    
+    
+            var marker_03ab6513029354bbe522baea42ea6605 = L.marker(
+                [34.87040679, 136.5380782],
+                {}
+            ).addTo(map_fe5079e59cbcc682b822a6122c0f0b9c);
+        
+    
+        var popup_53fbb7a1c25bec1398a4b2c03fb7045e = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_2d52f3729bef6eab1af5ca46de2b3521 = $(`<div id="html_2d52f3729bef6eab1af5ca46de2b3521" style="width: 100.0%; height: 100.0%;"><div style='font-size: 14px; font-family: Arial, sans-serif;'><b>拠点名称:</b> Sｾﾝｺｰ_鈴鹿ＬＣ<br><b>地震リスク(6強以上):</b> 30年以内に発生する確率は6%以上<br><b>液状化リスク:</b> かなり低い<br><b>津波浸水想定:</b> 想定無し<br><b>風災リスク(設計基準風速30m/s以上):</b> 観測無し<br><b>河川氾濫想定:</b> 想定無し<br><b>高潮浸水想定:</b> 想定無し<br><b>土砂災害警戒区域:</b> 指定無し<br><b>降灰の堆積(富士山噴火シナリオ):</b> 想定無し<br><b>1k㎡における落雷回数:</b> 8～16回未満<br><b>保管場所:</b> 建物２階建て  通常は１階  置ききれない分は２階<br><a href='https://www.google.com/maps?q=34.87040679,136.5380782' target='_blank'>Google Mapsで開く</a></div></div>`)[0];
+                popup_53fbb7a1c25bec1398a4b2c03fb7045e.setContent(html_2d52f3729bef6eab1af5ca46de2b3521);
+            
+        
+
+        marker_03ab6513029354bbe522baea42ea6605.bindPopup(popup_53fbb7a1c25bec1398a4b2c03fb7045e)
+        ;
+
+        
+    
+    
+            var marker_9f351b7f15ea5c94a5e8bdfdaea62f01 = L.marker(
+                [34.84033914, 136.5316011],
+                {}
+            ).addTo(map_fe5079e59cbcc682b822a6122c0f0b9c);
+        
+    
+        var popup_8cd5d80b0a4256a762d2a78b95581c89 = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_b50abd7f2455001b63411e47090693bc = $(`<div id="html_b50abd7f2455001b63411e47090693bc" style="width: 100.0%; height: 100.0%;"><div style='font-size: 14px; font-family: Arial, sans-serif;'><b>拠点名称:</b> 御薗倉庫（みそのそうこ）<br><b>地震リスク(6強以上):</b> 30年以内に発生する確率は6%以上<br><b>液状化リスク:</b> かなり低い<br><b>津波浸水想定:</b> 想定無し<br><b>風災リスク(設計基準風速30m/s以上):</b> 観測無し<br><b>河川氾濫想定:</b> 想定無し<br><b>高潮浸水想定:</b> 想定無し<br><b>土砂災害警戒区域:</b> 指定無し<br><b>降灰の堆積(富士山噴火シナリオ):</b> 想定無し<br><b>1k㎡における落雷回数:</b> 8～16回未満<br><b>保管場所:</b> 建物１階建て<br><a href='https://www.google.com/maps?q=34.84033914,136.5316011' target='_blank'>Google Mapsで開く</a></div></div>`)[0];
+                popup_8cd5d80b0a4256a762d2a78b95581c89.setContent(html_b50abd7f2455001b63411e47090693bc);
+            
+        
+
+        marker_9f351b7f15ea5c94a5e8bdfdaea62f01.bindPopup(popup_8cd5d80b0a4256a762d2a78b95581c89)
+        ;
+
+        
+    
+    
+            var marker_28c3f8ea29fc53a8b6393bb0a77f5f3e = L.marker(
+                [36.05864, 139.63562],
+                {}
+            ).addTo(map_fe5079e59cbcc682b822a6122c0f0b9c);
+        
+    
+        var popup_424a28eabc5925812cb7927f1df4c784 = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_d12349e00253ab48fedfafa35d0d662a = $(`<div id="html_d12349e00253ab48fedfafa35d0d662a" style="width: 100.0%; height: 100.0%;"><div style='font-size: 14px; font-family: Arial, sans-serif;'><b>拠点名称:</b> Sｾﾝｺｰ_久喜PD<br><b>地震リスク(6強以上):</b> 30年以内に発生する確率は6%以上<br><b>液状化リスク:</b> やや高い<br><b>津波浸水想定:</b> 公開データ無し<br><b>風災リスク(設計基準風速30m/s以上):</b> 観測無し<br><b>河川氾濫想定:</b> 想定有り<br><b>高潮浸水想定:</b> 公開データ無し<br><b>土砂災害警戒区域:</b> 指定無し<br><b>降灰の堆積(富士山噴火シナリオ):</b> 想定無し<br><b>1k㎡における落雷回数:</b> 32回以上<br><b>保管場所:</b> 建物４階建て  通常は１階  置ききれない分は５階<br><a href='https://www.google.com/maps?q=36.05864,139.63562' target='_blank'>Google Mapsで開く</a></div></div>`)[0];
+                popup_424a28eabc5925812cb7927f1df4c784.setContent(html_d12349e00253ab48fedfafa35d0d662a);
+            
+        
+
+        marker_28c3f8ea29fc53a8b6393bb0a77f5f3e.bindPopup(popup_424a28eabc5925812cb7927f1df4c784)
+        ;
+
+        
+    
+    
+            var marker_f84bc1f24197d03340c26e1e8498e3c3 = L.marker(
+                [33.60639464, 131.2408453],
+                {}
+            ).addTo(map_fe5079e59cbcc682b822a6122c0f0b9c);
+        
+    
+        var popup_de71f24e4a69c4276e921ae373d75757 = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_4627ea5882808d0c6ed5aaaf109329f0 = $(`<div id="html_4627ea5882808d0c6ed5aaaf109329f0" style="width: 100.0%; height: 100.0%;"><div style='font-size: 14px; font-family: Arial, sans-serif;'><b>拠点名称:</b> 中津急行第10事業所         <br><b>地震リスク(6強以上):</b> 30年以内に発生する確率は6%未満<br><b>液状化リスク:</b> 高い<br><b>津波浸水想定:</b> 想定無し<br><b>風災リスク(設計基準風速30m/s以上):</b> 観測無し<br><b>河川氾濫想定:</b> 想定無し<br><b>高潮浸水想定:</b> 3m以上5ｍ未満<br><b>土砂災害警戒区域:</b> 指定無し<br><b>降灰の堆積(富士山噴火シナリオ):</b> 想定無し<br><b>1k㎡における落雷回数:</b> 8～16回未満<br><b>保管場所:</b> 1階～<br><a href='https://www.google.com/maps?q=33.60639464,131.2408453' target='_blank'>Google Mapsで開く</a></div></div>`)[0];
+                popup_de71f24e4a69c4276e921ae373d75757.setContent(html_4627ea5882808d0c6ed5aaaf109329f0);
+            
+        
+
+        marker_f84bc1f24197d03340c26e1e8498e3c3.bindPopup(popup_de71f24e4a69c4276e921ae373d75757)
+        ;
+
+        
+    
+    
+            var marker_e624bd7ae226d51032f269ddcdbb955f = L.marker(
+                [35.45562591, 139.6978218],
+                {}
+            ).addTo(map_fe5079e59cbcc682b822a6122c0f0b9c);
+        
+    
+        var popup_fd3c8da055f4ae659b6472f745b27c40 = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_6315c178bd6742cb06b99772274dd4a8 = $(`<div id="html_6315c178bd6742cb06b99772274dd4a8" style="width: 100.0%; height: 100.0%;"><div style='font-size: 14px; font-family: Arial, sans-serif;'><b>拠点名称:</b> 東洋埠頭_川崎<br><b>地震リスク(6強以上):</b> 30年以内に発生する確率は6%以上<br><b>液状化リスク:</b> 高い<br><b>津波浸水想定:</b> 0.3ｍ未満<br><b>風災リスク(設計基準風速30m/s以上):</b> 観測無し<br><b>河川氾濫想定:</b> 想定無し<br><b>高潮浸水想定:</b> 想定無し<br><b>土砂災害警戒区域:</b> 指定無し<br><b>降灰の堆積(富士山噴火シナリオ):</b> 2cm以上10㎝未満<br><b>1k㎡における落雷回数:</b> 8～16回未満<br><b>保管場所:</b> 建物1階～2階<br><a href='https://www.google.com/maps?q=35.45562591,139.6978218' target='_blank'>Google Mapsで開く</a></div></div>`)[0];
+                popup_fd3c8da055f4ae659b6472f745b27c40.setContent(html_6315c178bd6742cb06b99772274dd4a8);
+            
+        
+
+        marker_e624bd7ae226d51032f269ddcdbb955f.bindPopup(popup_fd3c8da055f4ae659b6472f745b27c40)
+        ;
+
+        
+    
+    
+            var marker_4501ad59c6a81e9862128a293d7b2c36 = L.marker(
+                [35.494453, 139.763245],
+                {}
+            ).addTo(map_fe5079e59cbcc682b822a6122c0f0b9c);
+        
+    
+        var popup_326da2130976e24f119df50159e1ed1c = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_81d18175cc3605a78d8b0d1efc12aec4 = $(`<div id="html_81d18175cc3605a78d8b0d1efc12aec4" style="width: 100.0%; height: 100.0%;"><div style='font-size: 14px; font-family: Arial, sans-serif;'><b>拠点名称:</b> センコー東扇島<br><b>地震リスク(6強以上):</b> 30年以内に発生する確率は6%以上<br><b>液状化リスク:</b> 高い<br><b>津波浸水想定:</b> 0.3ｍ以上1ｍ未満<br><b>風災リスク(設計基準風速30m/s以上):</b> 観測有り<br><b>河川氾濫想定:</b> 想定無し<br><b>高潮浸水想定:</b> 想定無し<br><b>土砂災害警戒区域:</b> 指定無し<br><b>降灰の堆積(富士山噴火シナリオ):</b> 2cm以上10㎝未満<br><b>1k㎡における落雷回数:</b> 8～16回未満<br><b>保管場所:</b> 建物1階～2階<br><a href='https://www.google.com/maps?q=35.494453,139.763245' target='_blank'>Google Mapsで開く</a></div></div>`)[0];
+                popup_326da2130976e24f119df50159e1ed1c.setContent(html_81d18175cc3605a78d8b0d1efc12aec4);
+            
+        
+
+        marker_4501ad59c6a81e9862128a293d7b2c36.bindPopup(popup_326da2130976e24f119df50159e1ed1c)
+        ;
+
+        
+    
+    
+            var marker_47dc7e9a255c38498a4c0515242724d4 = L.marker(
+                [35.50386896, 139.7636951],
+                {}
+            ).addTo(map_fe5079e59cbcc682b822a6122c0f0b9c);
+        
+    
+        var popup_4beccd631be51e9d158ca2c22a379df6 = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_2831ea9527f2fdd159d5c143d1e8edc3 = $(`<div id="html_2831ea9527f2fdd159d5c143d1e8edc3" style="width: 100.0%; height: 100.0%;"><div style='font-size: 14px; font-family: Arial, sans-serif;'><b>拠点名称:</b> 丸全昭和_川崎<br><b>地震リスク(6強以上):</b> 30年以内に発生する確率は6%以上<br><b>液状化リスク:</b> 高い<br><b>津波浸水想定:</b> 0.3ｍ未満<br><b>風災リスク(設計基準風速30m/s以上):</b> 観測有り<br><b>河川氾濫想定:</b> 想定無し<br><b>高潮浸水想定:</b> 想定無し<br><b>土砂災害警戒区域:</b> 指定無し<br><b>降灰の堆積(富士山噴火シナリオ):</b> 2cm以上10㎝未満<br><b>1k㎡における落雷回数:</b> 8～16回未満<br><b>保管場所:</b> 建物1階<br><a href='https://www.google.com/maps?q=35.50386896,139.7636951' target='_blank'>Google Mapsで開く</a></div></div>`)[0];
+                popup_4beccd631be51e9d158ca2c22a379df6.setContent(html_2831ea9527f2fdd159d5c143d1e8edc3);
+            
+        
+
+        marker_47dc7e9a255c38498a4c0515242724d4.bindPopup(popup_4beccd631be51e9d158ca2c22a379df6)
+        ;
+
+        
+    
+    
+            var marker_9015aa8ec7f113a59cc4e1c3a8fa2774 = L.marker(
+                [33.24771396, 131.7385918],
+                {}
+            ).addTo(map_fe5079e59cbcc682b822a6122c0f0b9c);
+        
+    
+        var popup_11bf4934d8e52b0fd9a50e9f12bfdf6d = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_fed94462a8902429d14a0d7b4efe8f8a = $(`<div id="html_fed94462a8902429d14a0d7b4efe8f8a" style="width: 100.0%; height: 100.0%;"><div style='font-size: 14px; font-family: Arial, sans-serif;'><b>拠点名称:</b> 大成倉庫_大分<br><b>地震リスク(6強以上):</b> 30年以内に発生する確率は6%以上<br><b>液状化リスク:</b> 高い<br><b>津波浸水想定:</b> 2ｍ以上3ｍ未満<br><b>風災リスク(設計基準風速30m/s以上):</b> 観測無し<br><b>河川氾濫想定:</b> 想定無し<br><b>高潮浸水想定:</b> 0.5ｍ以上1ｍ未満<br><b>土砂災害警戒区域:</b> 指定無し<br><b>降灰の堆積(富士山噴火シナリオ):</b> 想定無し<br><b>1k㎡における落雷回数:</b> 4～8回未満<br><b>保管場所:</b> 建物1階（平屋倉庫）<br><a href='https://www.google.com/maps?q=33.24771396,131.7385918' target='_blank'>Google Mapsで開く</a></div></div>`)[0];
+                popup_11bf4934d8e52b0fd9a50e9f12bfdf6d.setContent(html_fed94462a8902429d14a0d7b4efe8f8a);
+            
+        
+
+        marker_9015aa8ec7f113a59cc4e1c3a8fa2774.bindPopup(popup_11bf4934d8e52b0fd9a50e9f12bfdf6d)
+        ;
+
+        
+    
+    
+            var marker_70a9c0668d4a0ed31cbd72e753ac4244 = L.marker(
+                [34.47676135, 133.7634924],
+                {}
+            ).addTo(map_fe5079e59cbcc682b822a6122c0f0b9c);
+        
+    
+        var popup_c0ca89c00545b4dc856129507680a19e = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_1fb39ac6e2ee203ab301ba7fc1fdd577 = $(`<div id="html_1fb39ac6e2ee203ab301ba7fc1fdd577" style="width: 100.0%; height: 100.0%;"><div style='font-size: 14px; font-family: Arial, sans-serif;'><b>拠点名称:</b> Fｾﾝｺｰ_水島場外<br><b>地震リスク(6強以上):</b> 30年以内に発生する確率は6%以上<br><b>液状化リスク:</b> 高い<br><b>津波浸水想定:</b> 想定無し<br><b>風災リスク(設計基準風速30m/s以上):</b> 観測無し<br><b>河川氾濫想定:</b> 想定無し<br><b>高潮浸水想定:</b> 公開データ無し<br><b>土砂災害警戒区域:</b> 指定無し<br><b>降灰の堆積(富士山噴火シナリオ):</b> 想定無し<br><b>1k㎡における落雷回数:</b> 0.04～4回未満<br><b>保管場所:</b> 平屋倉庫（１階保管）<br><a href='https://www.google.com/maps?q=34.47676135,133.7634924' target='_blank'>Google Mapsで開く</a></div></div>`)[0];
+                popup_c0ca89c00545b4dc856129507680a19e.setContent(html_1fb39ac6e2ee203ab301ba7fc1fdd577);
+            
+        
+
+        marker_70a9c0668d4a0ed31cbd72e753ac4244.bindPopup(popup_c0ca89c00545b4dc856129507680a19e)
+        ;
+
+        
+    
+    
+            var feature_group_830014fe8a7f73542f6a8b1ca73832ec = L.featureGroup(
+                {}
+            ).addTo(map_fe5079e59cbcc682b822a6122c0f0b9c);
+        
+    
+            var heat_map_c543cff57118741a8e39e04f97387eed = L.heatLayer(
+                [[35.80708129, 140.357299], [33.60857184, 130.4036967], [32.062775, 131.47403], [33.59037231, 130.4388407], [32.43416433, 131.6526269], [32.43132482, 131.6384634], [34.78536404, 135.5740702], [32.43757429, 131.6536703], [34.87040679, 136.5380782], [34.84033914, 136.5316011], [36.05864, 139.63562], [33.60639464, 131.2408453], [35.45562591, 139.6978218], [35.494453, 139.763245], [35.50386896, 139.7636951], [33.24771396, 131.7385918], [34.47676135, 133.7634924]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
+            ).addTo(feature_group_830014fe8a7f73542f6a8b1ca73832ec);
+        
+    
+            var tile_layer_ad37ef6961d5b1aef2bd50013804b5ef = L.tileLayer(
+                "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg",
+                {"attribution": "\u0026copy; \u003ca href=\"https://maps.gsi.go.jp/development/ichiran.html\"\u003e\u56fd\u571f\u5730\u7406\u9662\u003c/a\u003e", "detectRetina": false, "fmt": "image/png", "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fe5079e59cbcc682b822a6122c0f0b9c);
+        
+    
+            var tile_layer_3f0efffb1887b094e3dc5065bce7604f = L.tileLayer(
+                "https://cyberjapandata.gsi.go.jp/xyz/relief/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://maps.gsi.go.jp/development/ichiran.html\"\u003e\u56fd\u571f\u5730\u7406\u9662\u003c/a\u003e", "detectRetina": false, "fmt": "image/png", "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fe5079e59cbcc682b822a6122c0f0b9c);
+        
+    
+            var layer_control_e58d31f09b0c5b3c486855ea36f8499e = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_91986f681753e530aa2655b428941a7f,
+                    "\u56fd\u571f\u5730\u7406\u9662\u5730\u56f3_\u5168\u56fd\u6700\u65b0\u5199\u771f\uff08\u30b7\u30fc\u30e0\u30ec\u30b9\uff09" : tile_layer_ad37ef6961d5b1aef2bd50013804b5ef,
+                    "\u56fd\u571f\u5730\u7406\u9662\u5730\u56f3_\u8272\u5225\u6a19\u9ad8\u56f3" : tile_layer_3f0efffb1887b094e3dc5065bce7604f,
+                },
+                overlays :  {
+                    "\u30d2\u30fc\u30c8\u30de\u30c3\u30d7" : feature_group_830014fe8a7f73542f6a8b1ca73832ec,
+                },
+            };
+            L.control.layers(
+                layer_control_e58d31f09b0c5b3c486855ea36f8499e.base_layers,
+                layer_control_e58d31f09b0c5b3c486855ea36f8499e.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_fe5079e59cbcc682b822a6122c0f0b9c);
+            feature_group_830014fe8a7f73542f6a8b1ca73832ec.remove();
+            tile_layer_ad37ef6961d5b1aef2bd50013804b5ef.remove();
+            tile_layer_3f0efffb1887b094e3dc5065bce7604f.remove();
+        
+</script>
+</html>
